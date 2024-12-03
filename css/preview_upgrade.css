@@ -1,0 +1,1118 @@
+@font-face {
+    font-family: 'Evergrow Sans';
+    src: url('../fonts/EvergrowSans-Regular.ttf') format('ttf'),
+    url('../fonts/EvergrowSans-Regular.woff') format('woff'),
+    url('../EvergrowSans-Regular.sfd') format('sfd');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Evergrow Sans';
+    src: url('../fonts/EvergrowSans-Bold.ttf') format('ttf'),
+    url('../fonts/EvergrowSans-Bold.woff') format('woff'),
+    url('../EvergrowSans-Bold.sfd') format('sfd');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Evergrow Sans';
+    src: url('../fonts/EvergrowSans-ExtraBold.ttf') format('ttf'),
+    url('../fonts/EvergrowSans-ExtraBold.woff') format('woff'),
+    url('../EvergrowSans-ExtraBold.sfd') format('sfd');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Evergrow Sans';
+    src: url('../fonts/EvergrowSans-Light.ttf') format('ttf'),
+    url('../fonts/EvergrowSans-Light.woff') format('woff'),
+    url('../EvergrowSans-Light.sfd') format('sfd');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Evergrow Sans';
+    src: url('../fonts/EvergrowSans-Medium.ttf') format('ttf'),
+    url('../fonts/EvergrowSans-Medium.woff') format('woff'),
+    url('../EvergrowSans-Medium.sfd') format('sfd');
+    font-weight: 500;
+    font-style: normal;
+}
+
+.twbb-pu-upgrade-container * {
+    font-family: 'Evergrow Sans'!important;
+}
+
+.twbb-pu-bottom-bar {
+    display: flex;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 1000px;
+    height: 64px;
+    border-radius: 6px;
+    justify-content: left;
+    padding: 2px;
+    font: normal normal 600 16px/28px Open Sans;
+    letter-spacing: 0.13px;
+    color: #FFFFFF;
+    align-items: center;
+    background: transparent linear-gradient(264deg, #22B339 0%, #4285F4 100%) 0% 0% no-repeat padding-box;
+    z-index: 100000;
+}
+
+.twbb-pu-bottom-bar > div {
+    background-color: #2A2F30;
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.twbb-pu-bottom-bar span {
+    flex-grow: 1;
+}
+
+.twbb-pu-button.twbb-button-blue,
+.twbb-pu-button.twbb-button-blue:hover {
+    background: #2160B5 0% 0% no-repeat padding-box;
+    border-color: #2160B5;
+    border-radius: 6px;
+    opacity: 1;
+    width: 180px;
+    height: 40px;
+    text-align: center;
+    font: normal normal 600 14px/40px Open Sans;
+    letter-spacing: 0.12px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    padding: 0;
+    cursor: pointer;
+}
+
+.twbb-pu-upgrade-layout {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left:0;
+    top: 0;
+    background-color: #000000;
+    opacity: 0.5;
+    z-index: 1000004;
+}
+
+.twbb-pu-upgrade-container {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 1180px;
+    height: 600px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 12px;
+    z-index: 1000005;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.twbb-pu-upgrade-container .twbb-pu-upgrade-close {
+    position: fixed;
+    width: 24px;
+    height: 24px;
+    background: url("../images/close_icon_grey.svg") no-repeat 0 0;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    z-index: 99;
+}
+
+.twbb-pu-upgrade-container .twbb-pu-upgrade-close:hover {
+    background: url("../images/close_circle_1.svg") no-repeat 0 0;
+    background-size: 24px;
+}
+
+.twbb-pu-upgrade-left {
+    width: 440px;
+    padding: 30px 40px;
+    box-sizing: border-box;
+}
+
+.twbb-pu-upgrade-right {
+    width: 740px;
+    background: #2A2F3008 0% 0% no-repeat padding-box;
+}
+
+.twbb-pu-upgrade-container p.twbb-pu-upgrade-title {
+    text-align: left;
+    font: normal normal 800 18px/28px Open Sans;
+    letter-spacing: 0.15px;
+    color: #2A2F30;
+    margin-bottom: 10px;
+}
+
+.twbb-pu-upgrade-container p.twbb-pu-upgrade-descr {
+    text-align: left;
+    font: normal normal normal 14px/20px Open Sans;
+    letter-spacing: 0px;
+    color: #2A2F30;
+}
+
+.twbb-pu-upgrade-container p.twbb-pu-upgrade-item {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    font: normal normal normal 12px/18px Open Sans;
+    letter-spacing: 0.1px;
+    color: #000000;
+    padding-left: 0px;
+    margin-bottom: 8px;
+}
+
+.twbb-pu-upgrade-container p.twbb-pu-upgrade-item span {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: url(../images/check_video_icon.svg) no-repeat #2160B50D;
+    background-size: 18px;
+    border-radius: 8px;
+    padding: 2px;
+    margin-right: 10px;
+    margin-left: 2px;
+}
+
+.twbb-pu-upgrade-container p.twbb-pu-upgrade-subtitle {
+    text-align: left;
+    font: normal normal bold 14px/20px Open Sans;
+    letter-spacing: 0px;
+    color: #2A2F30;
+    margin: 18px 0 12px 0;
+}
+
+.twbb-pu-upgrade-container .twbb-pu-upgrade-subdescr {
+    text-align: left;
+    font: normal normal normal 12px/20px Open Sans;
+    letter-spacing: 0.1px;
+    color: #2A2F30;
+}
+
+.twbb-pu-upgrade-container .twbb-pu-upgrade-subdescr.twbb-pu-cancel-row {
+    margin-top: 24px;
+}
+
+.twbb-pu-upgrade-container a.twbb-pu-upgrade-button {
+    background: #000000 0% 0% no-repeat padding-box;
+    border-radius: 6px;
+    opacity: 1;
+    color: #FFFFFF;
+    width: 100%;
+    display: block;
+    height: 40px;
+    text-align: center;
+    margin-top: 30px;
+    text-align: center;
+    font: normal normal 600 14px/40px Open Sans;
+    letter-spacing: 0.12px;
+    cursor: pointer;
+}
+
+.twbb-pu-upgrade-container a.twbb-pu-upgrade-button:hover {
+    background: #000000 0% 0% no-repeat padding-box;
+    color: #FFFFFF;
+}
+
+.twbb-pu-upgrade-container .twbb-pu-upgrade-button-down-contianer {
+    display: flex;
+    justify-content: center;
+}
+.twbb-pu-upgrade-container span.twbb-pu-upgrade-button-down-text {
+    background-image: url(../images/money-back-guarantee.svg);
+    background-repeat: no-repeat;
+    background-size: 14px;
+    background-position: center left;
+    font: normal normal 600 12px/18px Open Sans;
+    letter-spacing: 0.1px;
+    color: #2A2F30;
+    padding-left: 19px;
+    margin-top: 15px;
+}
+.twbb-pu-upgrade-container a.twbb-pu-upgrade-button:active,
+.twbb-pu-upgrade-container a.twbb-pu-upgrade-button:hover {
+    text-decoration: none;
+    color: #FFFFFF;
+    font: normal normal 600 14px/40px Open Sans;
+    letter-spacing: 0.12px;
+}
+
+.twbb-pu-upgrade-videos {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.twbb-pu-upgrade-videos li {
+    display: flex;
+    text-align: left;
+    font: normal normal normal 12px/18px Open Sans;
+    letter-spacing: 0.1px;
+    color: #000000;
+    opacity:1;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.twbb-pu-upgrade-container .twbb-pu-upgrade-videos li span {
+    background: url(../images/check_video_icon.svg) #2160B50D no-repeat;
+    width: 18px;
+    height: 18px;
+    border-radius: 9px;
+    margin-right: 8px;
+    background-size: 18px;
+}
+
+/*
+.twbb-pu-upgrade-container .twbb-pu-upgrade-videos li.twbb-pu-video-active span,
+.twbb-pu-upgrade-container .twbb-pu-upgrade-videos li:hover:not(.twbb-pu-video-item-text) span {
+    background: url(../images/check_video_icon.svg) #2160B50D no-repeat;
+    background-size: 18px;
+}
+*/
+
+/*
+.twbb-pu-upgrade-container .twbb-pu-upgrade-videos li.twbb-pu-video-active,
+.twbb-pu-upgrade-container .twbb-pu-upgrade-videos li.twbb-pu-video-active:hover {
+    font: normal normal 600 12px/18px Open Sans;
+    letter-spacing: 0.1px;
+}
+*/
+
+.twbb-pu-upgrade-container .twbb-pu-upgrade-videos li:hover {
+    font: normal normal normal 12px/18px Open Sans;
+    letter-spacing: 0.1px;
+    color: #000000;
+    opacity: 1;
+}
+
+.twbb-pu-upgrade-container .twbb-pu-upgrade-videos li.twbb-pu-video-item-text {
+    font: normal normal normal 12px/18px Open Sans;
+    letter-spacing: 0.1px;
+    color: #000000;
+    opacity: 1;
+    cursor: default;
+}
+
+.twbb-pu-upgrade-container a.twbb-pu-upgrade-button.twbb-pu-upgrade-button-mobile {
+    width: 260px;
+    height: 40px;
+    background: #000000 0% 0% no-repeat padding-box;
+    border-radius: 6px;
+    opacity: 1;
+    margin: 20px 0 30px 0;
+    display: none;
+    text-transform: none;
+}
+
+.twbb-pu-hidden {
+    display: none!important;
+}
+
+.twbb-pu-info-container-mobile {
+    display: none;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .twbb-pu-upgrade-container {
+        position: fixed;
+        left: 0;
+        top: 0;
+        transform: none;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+        justify-content: flex-start;
+    }
+
+    .twbb-pu-upgrade-left {
+        width: 100%;
+        padding: 30px 20px 10px 20px;
+    }
+    .twbb-pu-ecommerce.twbb-pu-upgrade-container .twbb-pu-upgrade-left {
+        width: 100%;
+        padding: 30px 20px 10px 20px;
+    }
+
+    .twbb-pu-upgrade-right {
+        width: 100%;
+        padding: 0px 20px;
+        height: 226px;
+    }
+    .twbb-pu-ecommerce .twbb-pu-upgrade-right {
+        height: auto;
+    }
+
+    .twbb-pu-upgrade-right video {
+        height: 226px!important;
+        width:100%!important;
+    }
+
+    .twbb-pu-upgrade-container .twbb-pu-upgrade-title {
+        font: normal normal 800 16px/26px Open Sans;
+        letter-spacing: 0.13px;
+        color: #2A2F30;
+        margin-bottom: 5px;
+    }
+
+    .twbb-pu-upgrade-container .twbb-pu-upgrade-subtitle {
+        margin: 20px 0 8px 0;
+    }
+
+    .twbb-pu-upgrade-container .twbb-pu-upgrade-button.twbb-pu-upgrade-button-desktop,
+    .twbb-pu-upgrade-button-down-contianer.twbb-pu-upgrade-button-down-contianer-desktop {
+        display: none;
+    }
+    .twbb-pu-upgrade-button-down-contianer.twbb-pu-upgrade-button-down-contianer-mobile {
+        display: flex;
+    }
+
+    .twbb-pu-upgrade-container .twbb-pu-upgrade-button.twbb-pu-upgrade-button-mobil {
+        display: block;
+        margin: 30px auto;
+        width: 260px;
+        height: 40px;
+    }
+
+    .twbb-pu-info-container {
+        display: none;
+    }
+    .twbb-pu-info-container-mobile {
+        display: block;
+    }
+
+    .twbb-pu-upgrade-container a.twbb-pu-upgrade-button.twbb-pu-upgrade-button-mobile {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .twbb-pu-bar {
+        font: normal normal 600 14px/22px Open Sans;
+        letter-spacing: 0.12px;
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .twbb-pu-upgrade-title {
+        padding-right: 40px;
+    }
+
+    .twbb-pu-upgrade-right {
+        background-color: #FFFFFF
+    }
+
+    .twbb-pu-upgrade-right video,
+    .twbb-pu-countdown {
+        display: none;
+    }
+
+    .twbb-pu-upgrade-container .twbb-pu-video-item > span {
+        display: block;
+    }
+
+    .twbb-pu-video-item .twbb-pu-countdown svg {
+        transform: none;
+    }
+
+    /*
+    .twbb-pu-upgrade-videos li.twbb-pu-video-active,
+    .twbb-pu-upgrade-videos li.twbb-pu-video-active:hover,
+    .twbb-pu-upgrade-videos li:hover {
+        font: normal normal normal 12px/18px Open Sans;
+    }
+    */
+
+    .twbb-pu-bar {
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+        font: normal normal 600 14px/22px Open Sans;
+        letter-spacing: 0.12px;
+        padding: 10px 15px;
+        box-sizing: border-box;
+
+    }
+
+    .twbb-pu-bottom-bar > div {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .twbb-pu-bottom-bar {
+        width: 100%;
+        bottom: 0;
+        border-radius: 0;
+        background: #2A2F30;
+    }
+
+    .twbb-pu-button.twbb-button-blue, .twbb-pu-button.twbb-button-blue:hover {
+        width: 150px;
+        height: 30px;
+        margin: 15px 0 0 0;
+        font: normal normal 600 12px/16px Open Sans;
+        letter-spacing: 0.1px;
+    }
+
+    .twbb-pu-upgrade-container .twbb-pu-bar>span {
+        width: 285px;
+        text-align: center;
+    }
+}
+
+.twbb-pu-upgrade-videos li.twbb-pu-item-text-domain {
+    color: #3339F1;
+}
+
+.twbb-pu-upgrade-videos li.twbb-pu-item-text-domain.twbb-pu-item-text-gradient {
+    background: transparent -webkit-linear-gradient(264deg, #22B339 0%, #5966D9 100%) 0% 0% no-repeat padding-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font: normal normal normal 12px/18px Open Sans;
+    letter-spacing: 0.1px;
+    color: #000000;
+    opacity: 1;
+    font-weight:600;
+}
+
+
+svg circle {
+    stroke-dasharray: 38px;
+    stroke-dashoffset: 0px;
+    stroke-linecap: round;
+    stroke-width: 2px;
+    stroke: #2160B5;
+    fill: none;
+}
+
+@keyframes countdown {
+    from {
+        stroke-dashoffset: 0px;
+    }
+    to {
+        stroke-dashoffset: 40px;
+    }
+}
+.twbb-pu-ecommerce .twbb-pu-upgrade-close {
+    background: url("../images/close_circle_grey.svg") no-repeat 0 0;
+    background-size: 24px;
+    width: 24px;
+    height: 24px;
+}
+
+.twbb-pu-ecommerce .twbb-pu-upgrade-close:hover {
+    background: url("../images/close_circle_1.svg") no-repeat 0 0;
+    background-size: 24px;
+}
+
+
+.twbb-pu-ecommerce .twbb-pu-upgrade-left {
+    width: 470px;
+    padding: 0 0 0 50px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.twbb-pu-ecommerce .twbb-pu-upgrade-left .twbb-pu-left-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    background: #000000 url(../images/shopping_bag.svg) 13px 10px no-repeat;
+}
+.twbb-pu-ecommerce .twbb-pu-upgrade-left .twbb-pu-ecommerce-heading h1 {
+    font: normal normal 800 36px/50px Open Sans;
+    letter-spacing: 0.3px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+.twbb-pu-ecommerce .twbb-pu-upgrade-left .twbb-pu-ecommerce-description p {
+    font: normal normal normal 22px/36px Open Sans;
+    letter-spacing: 0;
+    color: #000000;
+}
+.twbb-pu-ecommerce .twbb-pu-upgrade-left .twbb-pu-ecommerce-button a {
+    background-color: #3339F1;
+    border-radius: 6px;
+    width: 260px;
+    padding: 10px 0;
+    font: normal normal 600 14px/20px Open Sans;
+    letter-spacing: 0.12px;
+    color: #FFFFFF;
+    text-transform: none;
+}
+.twbb-pu-ecommerce .twbb-pu-upgrade-left .twbb-pu-ecommerce-button a:hover {
+    opacity: 80%;
+}
+.twbb-pu-ecommerce .twbb-pu-upgrade-right {
+    color: #FFFFFF;
+    width: 630px;
+    margin: 5px;
+    padding: 35px 40px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+    background: url(../images/pu-ecommerce-bg.svg) no-repeat;
+    background-size: cover;
+}
+.twbb-pu-ecommerce .twbb-pu-upgrade-right .twbb-pu-ecommerce-list .twbb-pu-ecommerce-list-heading {
+    font: normal normal 800 16px/26px Open Sans;
+    letter-spacing: 0;
+    margin-bottom: 15px;
+}
+.twbb-pu-ecommerce .twbb-pu-upgrade-right .twbb-pu-ecommerce-list  .twbb-pu-ecommerce-ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    gap: 14px;
+}
+.twbb-pu-ecommerce .twbb-pu-upgrade-right .twbb-pu-ecommerce-list  .twbb-pu-ecommerce-ul li {
+    font: normal normal normal 14px/20px Open Sans;
+    letter-spacing: 0.12px;
+    padding-left: 24px;
+    list-style-type: none;
+    background: url(../images/mark_grey.svg) 0 center no-repeat;
+}
+
+.twbb-pu-ecommerce  .twbb-transparent-row {
+    display: none;
+}
+
+/* Black friday styles */
+.twbb-pu-upgrade-container-blackFriday.twbb-pu-upgrade-container {
+    overflow: hidden;
+}
+
+.twbb-pu-upgrade-container-blackFriday.twbb-pu-upgrade-container {
+    overflow: hidden;
+}
+
+.twbb-pu-upgrade-container-blackFriday .twbb-pu-upgrade-blackFriday-row {
+    display: block;
+    width: 100%;
+    height: 26px;
+    background: url(../images/balloons.png) #000000 right center no-repeat;
+    border-radius: 3px;
+    color: #FFF;
+    /* caption md/Regular */
+    font-family: "Open Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0px;
+    margin: 16px 0 6px 0;
+    padding: 4px 12px;
+    box-sizing: border-box;
+}
+
+
+.twbb-pu-upgrade-container-blackFriday .twbb-pu-upgrade-blackFriday-row span.twbb-pu-upgrade-blackFriday-bold {
+    color: #FFF;
+    font-family: "Open Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0px;
+}
+
+.twbb-pu-upgrade-container-blackFriday.twbb-pu-upgrade-container p.twbb-pu-upgrade-title {
+    color: #000000;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 4px;
+}
+
+.twbb-pu-upgrade-container-blackFriday.twbb-pu-upgrade-container p.twbb-customize-title.twbb-pu-upgrade-title {
+    font-size: 18px;
+}
+
+.twbb-pu-upgrade-container-blackFriday.twbb-pu-upgrade-container p.twbb-pu-upgrade-descr {
+    text-align: left;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    color: #2A2F30;
+}
+
+.twbb-pu-upgrade-container-blackFriday.twbb-pu-upgrade-container .twbb-pu-upgrade-subdescr.twbb-pu-cancel-row {
+    margin-top: 20px;
+}
+
+.twbb-pu-upgrade-container-blackFriday.twbb-pu-upgrade-container a.twbb-pu-upgrade-button,
+.twbb-pu-upgrade-container-blackFriday.twbb-pu-upgrade-container a.twbb-pu-upgrade-button:active,
+.twbb-pu-upgrade-container-blackFriday.twbb-pu-upgrade-container a.twbb-pu-upgrade-button:hover {
+    font: normal normal 600 12px / 40px Open Sans;
+    letter-spacing: 0.1px;
+}
+
+.twbb-pu-upgrade-container-blackFriday.twbb-pu-upgrade-container a.twbb-pu-upgrade-button:hover {
+    opacity: 0.8;
+}
+
+
+.twbb-pu-upgrade-container-blackFriday.twbb-pu-upgrade-container .twbb-pu-upgrade-left > p.twbb-pu-upgrade-subtitle {
+    margin-top:24px;
+}
+
+.twbb-pu-upgrade-container-blackFriday.twbb-pu-upgrade-container p.twbb-pu-upgrade-subtitle {
+    color: #000;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px; /* 150% */
+    letter-spacing: 0px;
+    margin-bottom: 8px;
+    margin-top:20px;
+}
+
+.twbb-pu-upgrade-container-blackFriday.twbb-pu-upgrade-container .twbb-pu-upgrade-videos li,
+.twbb-pu-upgrade-container-blackFriday.twbb-pu-upgrade-container p.twbb-pu-upgrade-item {
+    margin-bottom: 10px;
+    height: 19px;
+}
+
+.twbb-pu-upgrade-container-blackFriday-ec .twbb-pu-upgrade-blackFriday-ec-row-mobile,
+.twbb-pu-upgrade-blackFriday-row-mobile {
+    display: none;
+}
+
+.twbb-pu-upgrade-container-blackFriday-ec .twbb-pu-upgrade-blackFriday-ec-row {
+    display: flex;
+    width: 100%;
+    padding: 8px 16px;
+    align-items: center;
+    border-radius: 6px;
+    background: url(../images/balloons.png) rgba(51, 57, 241, 0.10) right center no-repeat;
+    margin-top: 20px;
+    color: #000000;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0px;
+}
+
+.twbb-pu-upgrade-container-blackFriday-ec .twbb-pu-upgrade-blackFriday-ec-row span.twbb-pu-upgrade-blackFriday-bold {
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0px;
+    color: #000;
+}
+
+
+.twbb-pu-upgrade-container-blackFriday-ec .twbb-pu-left-icon {
+    display: none;
+}
+
+.twbb-pu-upgrade-container-blackFriday-ec.twbb-pu-ecommerce .twbb-pu-upgrade-left .twbb-pu-ecommerce-heading h1 {
+    color: #000;
+    font-family: Evergrow Sans;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 52px;
+    letter-spacing: 0px;
+}
+
+.twbb-pu-upgrade-container-blackFriday-ec.twbb-pu-ecommerce .twbb-pu-upgrade-left .twbb-pu-ecommerce-description p {
+    color: #000;
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0px;
+}
+
+.twbb-pu-upgrade-container-blackFriday-ec.twbb-pu-ecommerce .twbb-pu-upgrade-left .twbb-pu-ecommerce-button a {
+    display: flex;
+    width: 260px;
+    height: 40px;
+    padding: 10px 24px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    background: #000;
+    color: #FFF;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-transform: none;
+    margin-top:40px;
+}
+
+.twbb-pu-upgrade-container-blackFriday-ec.twbb-pu-ecommerce .twbb-pu-upgrade-right {
+    background: #000000;
+}
+
+.twbb-pu-upgrade-container-blackFriday-ec.twbb-pu-ecommerce .twbb-pu-upgrade-right .twbb-pu-ecommerce-list .twbb-pu-ecommerce-list-heading {
+    letter-spacing: 0;
+    margin-bottom: 15px;
+    color: #FFF;
+    /* body sm/Bold */
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.twbb-pu-upgrade-container-blackFriday-ec.twbb-pu-ecommerce .twbb-pu-upgrade-right .twbb-pu-ecommerce-list .twbb-pu-ecommerce-ul li {
+    padding-left: 24px;
+    list-style-type: none;
+    background: url(../images/mark_grey.svg) 0 center no-repeat;
+    color: #FFF;
+    /* caption lg/Regular */
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+}
+
+@media screen and (max-width: 1200px) {
+    .twbb-pu-upgrade-container-blackFriday.twbb-pu-upgrade-container {
+        overflow: auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .twbb-pu-upgrade-container-blackFriday.twbb-pu-upgrade-container {
+        overflow: auto;
+    }
+
+    .twbb-pu-upgrade-container-blackFriday .twbb-pu-upgrade-blackFriday-row-mobile {
+        display: block;
+        width: 100%;
+        height: 56px;
+        border-radius: 6px;
+        color: #FFF;
+        /* caption md/Regular */
+        font-family: "Open Sans";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0px;
+        margin: 9px 0 20px 0;
+        padding: 8px 16px;
+        box-sizing: border-box;
+        background: url(../images/balloons_mobile.png) #000000 right center no-repeat;
+        /* caption md/Regular */
+    }
+
+    .twbb-pu-upgrade-container-blackFriday .twbb-pu-upgrade-blackFriday-row-mobile span.twbb-pu-upgrade-blackFriday-bold {
+        display: block;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 20px;
+    }
+
+    .twbb-pu-upgrade-container-blackFriday.twbb-pu-upgrade-container p.twbb-pu-upgrade-title {
+        color: #000000;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 36px;
+        margin-bottom: 8px;
+        color:#000000;
+    }
+
+    .twbb-pu-upgrade-container-blackFriday.twbb-pu-upgrade-container p.twbb-pu-upgrade-descr {
+        text-align: left;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+        letter-spacing: 0px;
+        color: #000000;
+    }
+
+
+    .twbb-pu-upgrade-container-blackFriday .twbb-pu-upgrade-blackFriday-row {
+        display: none;
+    }
+
+    .twbb-pu-upgrade-container-blackFriday.twbb-pu-upgrade-container .twbb-pu-upgrade-close {
+        right: 15px;
+        top: 15px;
+    }
+
+
+
+    .twbb-pu-upgrade-container-blackFriday.twbb-pu-upgrade-container .twbb-pu-upgrade-left {
+        padding-bottom: 0;
+    }
+
+    .twbb-pu-upgrade-container-blackFriday.twbb-pu-upgrade-container .twbb-pu-upgrade-left-header {
+        position: sticky;
+        height: 282px;
+        top: 49px;
+        backdrop-filter: blur(7px);
+        z-index: 999999;
+    }
+
+    .twbb-pu-upgrade-container-blackFriday.twbb-pu-upgrade-container .twbb-pu-upgrade-left > p.twbb-pu-upgrade-subtitle {
+        margin-top:25px;
+    }
+
+    .twbb-pu-upgrade-container-blackFriday-ec.twbb-pu-upgrade-container {
+        display: block;
+    }
+
+    .twbb-pu-upgrade-container-blackFriday-ec .twbb-pu-upgrade-blackFriday-ec-row {
+        display: none;
+    }
+
+    .twbb-pu-upgrade-container-blackFriday-ec .twbb-pu-upgrade-blackFriday-ec-row-mobile {
+        display: block;
+        width: 100%;
+        height: 56px;
+        border-radius: 6px;
+        color: #000000;
+        /* caption md/Regular */
+        font-family: "Open Sans";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0px;
+        margin: 0px 0 20px 0;
+        padding: 8px 16px;
+        box-sizing: border-box;
+        background: url(../images/balloons_mobile.png) #ffffff right center no-repeat;
+        /* caption md/Regular */
+    }
+
+    .twbb-pu-upgrade-container-blackFriday-ec .twbb-pu-upgrade-blackFriday-ec-row-mobile span.twbb-pu-upgrade-blackFriday-bold {
+        display: block;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 20px;
+    }
+
+    .twbb-pu-upgrade-container-blackFriday-ec.twbb-pu-ecommerce .twbb-pu-upgrade-right .twbb-pu-ecommerce-list .twbb-pu-ecommerce-list-heading {
+        margin-bottom: 10px;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 18px;
+    }
+
+    .twbb-pu-upgrade-container-blackFriday-ec.twbb-pu-ecommerce .twbb-pu-upgrade-right .twbb-pu-ecommerce-list .twbb-pu-ecommerce-ul li {
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0px;
+    }
+
+    .twbb-pu-upgrade-container-blackFriday-ec.twbb-pu-ecommerce .twbb-pu-upgrade-right .twbb-pu-ecommerce-list .twbb-pu-ecommerce-ul {
+        gap: 8px;
+    }
+
+    .twbb-pu-upgrade-container-blackFriday-ec.twbb-pu-ecommerce .twbb-pu-upgrade-right {
+        gap: 20px;
+    }
+
+    .twbb-pu-upgrade-container-blackFriday-ec.twbb-pu-ecommerce .twbb-pu-upgrade-left .twbb-pu-ecommerce-heading h1 {
+        color: #FFF;
+        text-overflow: ellipsis;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 36px; /* 145.833% */
+        letter-spacing: 0.198px;
+        margin: 0 0 8px 0;
+    }
+
+    .twbb-pu-upgrade-container-blackFriday-ec.twbb-pu-ecommerce .twbb-pu-upgrade-left .twbb-pu-ecommerce-description p {
+        overflow: hidden;
+        color: #FFF;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px; /* 166.667% */
+    }
+
+    .twbb-pu-upgrade-container-blackFriday-ec.twbb-pu-ecommerce .twbb-pu-upgrade-left .twbb-pu-ecommerce-button a {
+        background-color: #3339F1;
+        border-radius: 6px;
+        width: 260px;
+        padding: 10px 0;
+        font: normal normal 500 12px / 18px Open Sans;
+        letter-spacing: 0.12px;
+        color: #FFFFFF;
+        text-transform: none;
+        margin-top: 20px;
+    }
+
+    .twbb-pu-upgrade-container-blackFriday-ec.twbb-pu-ecommerce .twbb-transparent-row {
+        display: none;
+    }
+
+    .twbb-pu-upgrade-container-blackFriday-ec.twbb-pu-ecommerce .twbb-pu-upgrade-left {
+        position: sticky;
+        height: 324px;
+        top: 0px;
+        backdrop-filter: blur(7px);
+        z-index: 999999;
+
+    }
+
+    .twbb-pu-upgrade-container-blackFriday-ec.twbb-pu-ecommerce .twbb-pu-upgrade-right {
+        background: none;
+        padding: 20px 20px 20px 20px;
+        box-sizing: border-box;
+        width: 100%;
+        margin: 1px 0 0 0;
+        overflow: hidden;
+    }
+
+    .twbb-pu-upgrade-container-blackFriday-ec.twbb-pu-ecommerce .twbb-pu-upgrade-close {
+        z-index: 99999999;
+    }
+}
+
+
+/* End of black friday */
+
+@media screen and (max-width: 600px) {
+    .twbb-pu-upgrade-left {
+        width: 100%;
+        padding: 40px 20px 10px 20px;
+    }
+
+    .twbb-pu-upgrade-container p.twbb-pu-upgrade-title {
+        width: 290px;
+        letter-spacing: 0.15px;
+        color: #000000;
+    }
+
+    .twbb-pu-upgrade-container p.twbb-pu-upgrade-descr {
+        text-align: left;
+        font: normal normal normal 14px/20px Open Sans;
+        letter-spacing: 0px;
+        color: #000000;
+        width: 345px;
+    }
+
+    .twbb-pu-upgrade-container p.twbb-pu-upgrade-subtitle {
+        font: normal normal 800 14px / 24px Open Sans;
+    }
+
+    .twbb-pu-ecommerce.twbb-pu-upgrade-container .twbb-pu-upgrade-left {
+        width: 100%;
+        padding: 40px 20px 0 20px;
+    }
+
+    .twbb-pu-ecommerce.twbb-pu-upgrade-container {
+        background-color: #000000;
+    }
+
+    .twbb-pu-ecommerce .twbb-pu-upgrade-left .twbb-pu-left-icon {
+        display: none;
+    }
+
+    .twbb-pu-ecommerce .twbb-pu-upgrade-right {
+        background: none;
+        padding: 29px 20px 20px 20px;
+        box-sizing: border-box;
+        width: 100%;
+        margin: 1px 0 0 0;
+        overflow-y: auto;
+    }
+
+    .twbb-pu-ecommerce .twbb-pu-upgrade-left .twbb-pu-ecommerce-heading h1 {
+        text-align: left;
+        font: normal normal 800 24px/35px Open Sans;
+        letter-spacing: 0.2px;
+        color: #FFFFFF;
+    }
+
+    .twbb-pu-ecommerce .twbb-pu-upgrade-left .twbb-pu-ecommerce-description p {
+        text-align: left;
+        font: normal normal normal 18px/30px Open Sans;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        margin: 0;
+        padding: 0;
+    }
+
+    .twbb-pu-ecommerce .twbb-pu-upgrade-button.twbb-pu-upgrade-button-desktop {
+         display: block;
+        margin-top: 20px;
+    }
+
+    .twbb-pu-ecommerce .twbb-pu-upgrade-right .twbb-pu-ecommerce-list .twbb-pu-ecommerce-list-heading {
+        font: normal normal 800 14px/24px Open Sans;
+        letter-spacing: 0;
+        margin-bottom: 8px;
+    }
+
+    .twbb-pu-ecommerce .twbb-pu-upgrade-right .twbb-pu-ecommerce-list .twbb-pu-ecommerce-ul li {
+        font: normal normal normal 12px / 18px Open Sans;
+        letter-spacing: 0.12px;
+        padding-right: 25px;
+        background-position: 0 1px;
+    }
+
+    .twbb-pu-ecommerce .twbb-pu-upgrade-right {
+        gap: 30px;
+    }
+
+    .twbb-pu-ecommerce  .twbb-transparent-row {
+        position: fixed;
+        top: 256px;
+        height: 20px;
+        width: 100%;
+        display: block;
+        opacity: 1;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+    }
+
+    .twbb-pu-ecommerce  .twbb-transparent-row-active {
+        border-bottom: 1px solid rgba(255,255,255, 0.1);
+    }
+}
+
+
